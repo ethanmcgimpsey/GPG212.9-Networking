@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Netcode;
 /// <summary>
 /// Controls the player
 /// </summary>
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : NetworkBehaviour
 {
     [SerializeField] public float moveSpeed;
     [SerializeField] public float runSpeed, walkSpeed, crouchSpeed, jumpSpeed;

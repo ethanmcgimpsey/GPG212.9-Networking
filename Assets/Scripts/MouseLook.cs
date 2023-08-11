@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class MouseLook : MonoBehaviour
+using Unity.Netcode;
+public class MouseLook : NetworkBehaviour
 {
     
     public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 };
